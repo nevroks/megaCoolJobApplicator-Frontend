@@ -1,0 +1,47 @@
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 70%;
+    margin: 7px auto;
+    padding: 15px;
+    height: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.input-wrapper label {
+    font-size: 12px;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    margin-bottom: 10px;
+    color: gray;
+}
+.input-wrapper input {
+    position: absolute;
+    bottom: 5px;
+    left: 3%;
+    border: none;
+    outline: none;
+}
+.input {
+    width: 90%;
+    height: 50%;
+}
+
+input:-webkit-autofill {
+background-color: transparent !important;
+}
+
+input:-webkit-autofill:focus {
+    background-color: transparent !important;
+}
+
+.LuEyeClosed, .LiaEye {
+    align-self: flex-end;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 10;
+}

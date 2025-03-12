@@ -1,0 +1,164 @@
+.VacancyCard {
+    width: 440px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+.VacancyCard.right {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.VacancyCard.left {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+.VacancyCard-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.VacancyCard-header h3 {
+    width: 100%;
+    text-align: left;
+    margin: 0 10px;
+}
+
+.VacancyCard-header-company-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.VacancyCard-header-text-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.VacancyCard-header-percentage {
+    width: 80px;
+    background-color: #D9E7FF;
+    padding: 1%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.VacancyCard-header-percentage span {
+    color: blue;
+}
+
+.VacancyCard-main {
+    width: 100%;
+}
+
+.VacancyCard-main-section {
+    margin: 20px auto;
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #FAFAFB;
+    align-self: flex-start;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.VacancyCard-main-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.IoHomeOutline,
+.GiConfirmed,
+.GoChecklist {
+    width: 16px;
+    height: 16px;
+}
+
+.IoIosCheckmark,
+.LuClock4 {
+    width: 20px;
+    height: 20px;
+}
+
+.FcShop {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.border {
+    margin-top: 40px;
+    height: 1px;
+    width: 90%;
+    background-color: #F5F5F9;
+}
+
+.VacancyCard-footer {
+    margin: 20px;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.button-block {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.site {
+    background-color: #FAFAFB;
+}
+
+.accept {
+    background-color: #30FF86;
+    color: white;
+}
+
+.reject {
+    background-color: #FF3B30;
+    color: white;
+}
+
+.site,
+.reject,
+.accept {
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.VacancyCard-footer-keyWord {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FAFAFB;
+}

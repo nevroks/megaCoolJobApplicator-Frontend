@@ -1,0 +1,73 @@
+.userProfileSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.profileInfo {
+    display: flex;
+    gap: 22px;
+}
+
+.avatarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatarImage {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fullName {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.userDetails {
+    margin-top: 18px;
+}
+
+.userName {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.userEmail {
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.profileActions {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nickName {
+    font-size: 15px;
+}
+
+.editButton {
+    background-color: #4182f9;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 29px;
+    cursor: pointer;
+}
+
+@media(max-width: 991px) {
+    .nickName {
+        margin-top: 40px;
+    }
+
+    .editButton {
+        padding: 10px 20px;
+    }
+}

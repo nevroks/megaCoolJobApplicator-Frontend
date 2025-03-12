@@ -1,0 +1,63 @@
+.emailSection {
+    margin-top: 30px;
+}
+
+.sectionTitle {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 19px;
+}
+
+.emailItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+    margin-bottom: 31px;
+}
+
+.emailIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4182f9;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.emailDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.emailAddress {
+    font-size: 15px;
+    margin: 0;
+}
+
+.emailTimestamp {
+    font-size: 15px;
+    color: #666;
+    margin: 0;
+}
+
+.addEmailButton {
+    background-color: #4182f9;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 23px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.FaEnvelope {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+@media(max-width:991px) {
+    .addEmailButton {
+        padding: 10px 20px;
+    }
+}

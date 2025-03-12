@@ -1,0 +1,58 @@
+.profileForm {
+    margin-top: 30px;
+}
+
+.formRow {
+    position: relative;
+    display: flex;
+    gap: 29px;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: tomato;
+    position: absolute;
+}
+
+.firstNameError, .gender, .language {
+    bottom: -12px;
+    left: 0;
+}
+
+.lastNameError, .country, .timezone {
+    bottom: -12px;
+    right: 0;
+}
+
+.formInput {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 7px;
+    padding: 13px 19px;
+    font-size: 15px;
+}
+
+.formLabels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.saveButton {
+    background-color: #4182f9;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 23px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media(max-width: 991px) {
+    .formInput {
+        max-width: 100%;
+    }
+
+}

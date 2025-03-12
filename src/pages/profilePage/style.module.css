@@ -1,0 +1,43 @@
+.container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.profilesetting {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 37px;
+}
+
+.mainContent {
+    flex: 1 0 0;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family:
+        Poppins,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
+}
+
+
+.profileCard {
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.profileBanner {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.profileContent {
+    padding: 30px;
+}

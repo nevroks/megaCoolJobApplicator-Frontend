@@ -1,0 +1,72 @@
+.register-form-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register-form {
+    margin: 10% 10px;
+    width: 458px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.register-form h2 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.border {
+    width: 70%;
+    height: 1px;
+    background-color: gray;
+}
+
+
+.enter {
+    background-color: #DDF5FF;
+}
+
+.register-submit {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    background-color: #0087D1;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+
+.register-submit-google {
+    border: 1px solid #0087D1;
+    border-radius: 8px;
+    width: 70%;
+    padding: 10px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    font-size: 0.8rem;
+}
+
+.remember {
+    align-self: flex-start;
+    margin-left: 15%;
+}
+
+.remember input {
+    background-color: #F8F1FF;
+}
+
+.google-icon {
+    width: 24px;
+    height: 24px;
+}

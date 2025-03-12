@@ -1,0 +1,32 @@
+.container {
+    width: fit-content;
+    min-height: 33px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #EEEEEE;
+    border-radius: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.title {
+    color: #AAAAAA;
+    font-size: 14px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+}
+.IoIosClose {
+    color: #AAAAAA;
+    width: 24px;
+    height: 24px;
+}
