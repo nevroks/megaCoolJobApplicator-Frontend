@@ -2,9 +2,10 @@ import styles from "./style.module.css";
 import cn from "classnames";
 import Input from "../../components/Input/Input";
 import { FcGoogle } from "react-icons/fc";
-import AnimatedBalls from "../../components/AnimatedBalls/AnimatedBalls";
+
 import { Link } from "react-router-dom";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { AnimatedBalls } from "@components";
 interface LoginFormInputs {
   email: string;
   password: string;

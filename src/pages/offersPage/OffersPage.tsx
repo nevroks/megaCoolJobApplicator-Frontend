@@ -1,6 +1,6 @@
-import React from "react";
 import styles from "./style.module.css";
-import VacancyCard from "../../components/VacancyCard/VacancyCard";
+import { VacancyCard } from "@components";
+
 
 const OffersPage = () => {
   return (

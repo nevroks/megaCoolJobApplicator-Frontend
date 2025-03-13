@@ -11,7 +11,7 @@ const mockUserValue = {
   language: 'english',
   timezone: 'GMT+3.00'
 }
-const profilePage = () => {
+const ProfilePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.profilesetting}>
@@ -29,5 +29,5 @@ const profilePage = () => {
   );
 };
 
-export default profilePage;
+export default ProfilePage;
 

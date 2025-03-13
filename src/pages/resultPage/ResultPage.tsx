@@ -1,6 +1,5 @@
-import React from 'react'
-import VacancyCard from '../../components/VacancyCard/VacancyCard';
 import styles from './style.module.css'
+import { VacancyCard } from '@components';
 const ResultPage = () => {
   return (
     <div className={styles.offersPage}>
