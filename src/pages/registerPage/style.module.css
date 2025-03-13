@@ -7,19 +7,20 @@
 }
 
 .register-form {
-    margin: 10% 10px;
+    margin: 10px 10px;
     width: 458px;
-    height: 627px;
+    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     display: flex;
     flex-flow: column;
     align-items: center;
     background-color: white;
+    padding: 30px 0;
 }
 
 .register-form h2 {
-    margin: 10px auto;
+    margin: 0px auto 10px;
     text-align: center;
 }
 
@@ -32,14 +33,20 @@
 
 .enter {
     background-color: #DDF5FF;
+    transition: 0.3s background-color ease-in;
 }
+
+.enter:has(> input:disabled) {
+    background-color: #a4b2b8;
+}
+
 .google-icon {
     width: 24px;
     height: 24px;
 }
 .register-submit {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     width: 70%;
     background-color: #0087D1;
     color: white;
@@ -53,11 +60,12 @@
     border-radius: 8px;
     width: 70%;
     padding: 10px 0;
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 8%;
-    font-size: 0.8rem;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
 }
 
 .remember {

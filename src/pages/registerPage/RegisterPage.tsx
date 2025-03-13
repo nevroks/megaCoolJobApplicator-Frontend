@@ -3,7 +3,7 @@ import cn from "classnames";
 import Input from "../../components/Input/Input";
 import { FcGoogle } from "react-icons/fc";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { useState } from "react";
+import { useRef, useState } from "react";
 interface RegisterFormInputs {
   name: string;
   sirname: string;
@@ -20,6 +20,7 @@ const RegisterPage = () => {
     formState: { errors },
   } = useForm<RegisterFormInputs>();
   const [isConfident, setIsConfident] = useState(false);
+  const confirmPassRef = useRef<null | HTMLInputElement>(null);
   const onSubmit: SubmitHandler<RegisterFormInputs> = (data) => {
     console.log(data);
   };
@@ -27,9 +28,15 @@ const RegisterPage = () => {
     setIsConfident(event.target.checked);
 
     if (event.target.checked) {
-      const passwordValue = watch("password");
-      setValue("confirmpassword", passwordValue);
+      //const passwordValue = watch("password");
+      //setValue("confirmpassword", passwordValue);
+      !!confirmPassRef.current
+        ? (confirmPassRef.current.disabled = true)
+        : console.log("wha");
     } else {
+      !!confirmPassRef.current
+        ? (confirmPassRef.current.disabled = false)
+        : console.log("wha");
       setValue("confirmpassword", "");
     }
   };
@@ -115,11 +122,15 @@ const RegisterPage = () => {
           {...register("confirmpassword", {
             required: "Подтверждение пароля обязательно",
             validate: (value) => {
+              console.log('validated')
               if (value !== watch("password")) {
                 return "Пароли не совпадают";
               }
             },
           })}
+          ref={(e) => {
+            confirmPassRef.current = e
+          }}
         />
         {errors.confirmpassword && (
           <span className={styles.error} style={{ fontSize: "0.8rem" }}>
@@ -138,7 +149,16 @@ const RegisterPage = () => {
             Уверен в себе ?
           </label>
         </div>
-        <button type="submit" className={cn(styles["register-submit"])}>
+        <button
+          type="submit"
+          className={cn(styles["register-submit"])}
+          onClick={() => {
+            if (isConfident) {
+              const passwordValue = watch("password");
+              setValue("confirmpassword", passwordValue);
+            }
+          }}
+        >
           РЕГИСТРАЦИЯ
         </button>
         <div className={styles["border"]}></div>

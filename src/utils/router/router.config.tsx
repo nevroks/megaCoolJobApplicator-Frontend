@@ -5,11 +5,11 @@ import LayoutAuth from "../../components/layout/LayoutAuth"; // Импортир
 
 import { APP_PATHS } from "@utils/consts/appConsts";
 import FeedPage from "@pages/FeedPage/FeedPage";
-import FiltersPage from "@pages/FiltersPage/FiltersPage";
+import FiltersPage from "@pages/filtersPage/FiltersPage";
 import ResultPage from "@pages/resultPage/ResultPage";
-import OffersPage from "@pages/OffersPage/OffersPage";
-import ProfilePage from "@pages/ProfilePage/ProfilePage";
-import LoginPage from "@pages/LoginPage/LoginPage";
+import OffersPage from "@pages/offersPage/OffersPage";
+import ProfilePage from "@pages/profilePage/profilePage";
+import LoginPage from "@pages/loginPage/LoginPage";
 import RegisterPage from "@pages/registerPage/RegisterPage";
 
 const router = createBrowserRouter([

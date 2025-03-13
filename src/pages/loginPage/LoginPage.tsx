@@ -68,7 +68,7 @@ const LoginPage = () => {
         <div className={styles["border"]}></div>
         <Link
           to="/auth/register"
-          style={{ textAlign: "left", width: "70%", color: "#0087D1" }}
+          className={styles["register-link"]}
         >
           Нету пароля ?
         </Link>
